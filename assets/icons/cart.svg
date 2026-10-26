@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 64 64">
+  <title>USB Crash Cart Viewer</title>
+  <defs>
+    <linearGradient id="tile" x1="4" y1="4" x2="60" y2="60" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#356aca"/>
+      <stop offset="1" stop-color="#234a94"/>
+    </linearGradient>
+  </defs>
+  <rect x="4" y="4" width="56" height="56" rx="14" fill="url(#tile)"/>
+  <g fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="14" y="17" width="36" height="26" rx="4"/>
+    <path d="M32 43v7m-8 0h16M23 25l5 5-5 5m11 0h7"/>
+  </g>
+</svg>

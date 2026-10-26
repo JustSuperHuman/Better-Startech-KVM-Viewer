@@ -1,0 +1,25 @@
+[package]
+name = "cart-installer"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+
+[[bin]]
+name = "cart-setup"
+path = "src/main.rs"
+# Its test harness would inherit the elevation manifest; tests live in the library.
+test = false
+
+[dependencies]
+anyhow.workspace = true
+egui = "0.32.3"
+egui-winit = { version = "0.32.3", default-features = false }
+egui-wgpu = "0.32.3"
+winit = "0.30.12"
+wgpu = "25.0.2"
+pollster = "0.4"
+png = "0.17"
+winreg = "0.56"
+
+[build-dependencies]
+embed-resource = "3.0.12"

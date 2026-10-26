@@ -1,0 +1,8 @@
+/target/
+/dist/
+/diagnostics/
+*.png
+!assets/**/*.png
+/release/
+/dist-*/
+__pycache__/

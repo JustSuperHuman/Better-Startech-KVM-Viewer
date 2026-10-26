@@ -1,0 +1,18 @@
+[workspace]
+members = ["crates/core", "crates/device-helper", "crates/viewer", "crates/installer"]
+resolver = "2"
+
+[workspace.package]
+version = "0.3.0"
+edition = "2024"
+rust-version = "1.88"
+
+[workspace.dependencies]
+anyhow = "1.0"
+libloading = "0.8"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+[profile.release]
+lto = "thin"
+strip = "debuginfo"
